@@ -1,0 +1,96 @@
+/* My First Web Page styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6f8ff 0%, #d9e4ff 100%);
+  color: #1a1f36;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+header h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 0.25rem 0;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  color: #4b5578;
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 50px rgba(17, 37, 90, 0.12);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 0.85rem;
+  background: #4f6cff;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button:hover,
+button:hover {
+  transform: translateY(-1px);
+  background: #3e55d1;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #f7f8ff;
+  border: 1px solid #e3e8ff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #4b5578;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  margin: 3rem 0 1rem;
+  color: #6c7190;
+  font-size: 0.95rem;
+}
